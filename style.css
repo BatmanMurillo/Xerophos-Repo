@@ -1,0 +1,395 @@
+/* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    overflow-x: hidden; /* solo bloquea scroll horizontal */
+}
+
+/* Video de fondo */
+.video-background {
+    position: fixed; /* fijo, siempre detrás del contenido */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* para que no bloquee clicks */
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; /* Cambio a columna para colocar los elementos en orden */
+}
+
+/* Estilos para el banner promocional */
+.promo-banner {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%; /*Poniendo el ancho al 100% aseguraré que el baner cubra todo el espacio de extremo a extremo de la pagina, sin dejar espacios*/
+    margin-bottom: 0; /* Al mantenerlo en 0 elimino el margen */
+}
+
+
+
+/* Contenedor del del encabezado */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* "space-between" Distribuye los elementos en los extremos */
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-top: 15px; /* Opcional: Añade algo de espacio entre el banner y el contenido */
+}
+
+/* Logo y nombre de la página */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Añadido margen para separar el logo de la barra de búsqueda */
+}
+
+.logo-img {
+    width: 60px; /* Tamaño de la imagen */
+    height: 60px;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.logo h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Estilo para el buscador */
+.search-container {
+    display: flex;
+    align-items: right;
+    margin-right: 15px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.search-button  {
+    background-color: #3f3f3f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    flex-shrink: 0; /*Esta función eviatará que el botón se reduzca*/
+}
+
+.search-button .material-symbols-outlined {
+    font-size: 1.5rem;
+    margin-right: 20px; /*Este ajuste me aegurará de que haya espacio entre el ícono y el borde la página*/
+}
+
+.search-button:hover {
+    background-color: #65615f;
+}
+
+/* Contenido */
+.content {
+    position: relative; /* relativo para estar sobre el video */
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 40px 40px 40px; /* top grande para que no se corte */
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* semitransparente */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Encabezados */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilo para el menú lateral */
+#menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente fuera de la pantalla */
+    background-color: #333;
+    color: white;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+    padding-top: 60px; /* Ajustar para que no cubra la parte superior */
+    z-index: 1000; /* Asegura que el menú se muestra encima de otros elementos */
+}
+
+/* Lista del menú */
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#menu ul li a:hover {
+    background-color: #444;
+}
+
+/* Muestra el menú lateral */
+#menu.show {
+    left: 0; /* Muestra el menú cuando se agrega la clase 'show' */
+}
+
+/* Maquetación del header con Grid */
+.header-content {
+    display: grid;
+    grid-template-columns: 48px 1fr auto; /* Menú | Centro | Buscador */
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+}
+
+/* Menú (Ícono) - Celda 1 */
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+    width: 48px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu-icon:focus-visible {
+    outline: 2px solid #888;
+    outline-offset: 2px;
+}
+
+.menu-icon .material-symbols-outlined {
+    font-size: 28px;
+}
+
+/* Logo centrado (Celda 2) */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left: 160px;
+    gap: 10px;
+    height: 100%; /* Añadido para que el logo ocupe todo el alto del contenedor */
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    display: block; /* Asegura que no haya ningún espacio debajo de la imagen */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #fff;
+    line-height: 70px; /* Añadido para ajustar la altura del texto al centro del logo */
+}
+
+/* Buscador (Celda 3) */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: end;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-right: 3px;
+    box-sizing: border-box; /* Asegura que padding y border no afecten el tamaño del elemento */
+}
+
+.search-button {
+    background: #444;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 48px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 8px;
+    margin-right: 25px;
+    box-sizing: border-box;
+}
+
+.search-button .material-symbols-outlined {
+    font-size: 22px;
+    margin: 0; /* Asegura que el icono no tenga márgenes adicionales */
+}
+
+/* Menú (en dispositivos pequeños) */
+@media (max-width: 640px) {
+    .header-content {
+        grid-template-columns: 48px 1fr;
+        grid-template-rows: auto auto;
+    }
+    .logo {
+        justify-self: center;
+    }
+    .search-container {
+        grid-column: 1/-1;
+        justify-self: stretch;
+    }
+    .search-input {
+        width: 100%;
+    }
+}
+
+/* Contenido principal (opcional para agregar espacio a la izquierda cuando el menú se despliega) */
+body.menu-active {
+    margin-left: 250px; /* Mueve el contenido hacia la derecha cuando el menú está visible */
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Paneles al final de la página */
+.panels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.panels div {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none; /* Para evitar subraydo */
+}
+
+.panels div:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+a.panel {
+    text-decoration: none;  /* elimina subrayado */
+    color: white;           /* mantiene el texto blanco */
+}
+
+/* Secciones */
+section {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #1a1a1a;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f4a261; /* Cambiar color al pasar el mouse */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-social a img {
+    width: 30px; /* Ajustar tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #777;
+}
