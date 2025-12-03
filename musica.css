@@ -85,7 +85,7 @@
 /* ===== Sección de artistas ===== */
 .artist-section {
   max-width: 1200px;
-  margin: 60px auto 80px;
+  margin: 180px auto 80px;
   padding: 0 20px;
   color: #fff;
   text-align: center;
@@ -102,7 +102,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 24px;
 }
 
 /* Panel base */
