@@ -2,6 +2,7 @@
 const menuButton = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
 const body = document.body;
+//example
 
 // Agregar un evento para mostrar/ocultar el menú
 menuButton.addEventListener("click", function() {
