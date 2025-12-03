@@ -204,6 +204,7 @@ p {
     height: 40px;
     cursor: pointer;
     color: #fff;
+    margin-left: 15px;
 }
 
 .menu-icon:focus-visible {
