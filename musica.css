@@ -1,6 +1,13 @@
 .content {
     position: relative;
-    padding-top: 20px;
+    padding-top: 100px; /* El banner controlorá el relleno */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #000; /* Fondo */
 }
 
 .musica-header {
@@ -24,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 20px;
+  padding-top: 0;  /* El banner controlorá el relleno */
   overflow: hidden;
 }
 
@@ -38,15 +45,16 @@
     object-fit: cover;
     z-index: -1;
     pointer-events: none; /* para que no bloquee clicks */
+    top: 180px;
 }
 
 /* Contenido del encabezado */
 .header-content {
-  position: relative;
+  position: static;
   text-align: center;
   color: white;
   z-index: 1; /* Asegura que el texto esté encima de las capas anteriores */
-  padding-top: 20px;
+  padding-top: 0; /* El banner controlorá el relleno */
 }
 
 /* Estilo para el título del encabezado */
@@ -66,6 +74,18 @@
 }
 
 
+/* Conetenedor del encabezado principal con banner */
+.mainHeaderBanner {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0); /* Fondo sin transparencia, totalmente oscuro */
+    padding: 30px 0; /* Espaciado arriba y abajo */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    z-index: 5; /* Asegura que esté encima del video de fondo */ 
+}
 
 
 
