@@ -10,6 +10,9 @@ menuButton.addEventListener("click", function() {
     body.classList.toggle("menu-active"); // Activa/desactiva el desplazamiento del contenido
 });
 
+
+/* --------------------------------------------------------------------------------------------------------- */
+
 // Dummy de artistas y búsqueda con mejor match + redirección
 
 const artists = [

@@ -154,6 +154,11 @@
   opacity: 0.9;
 }
 
+.artist-overlay a {
+    color: var(--color--text-light, white);
+    text-decoration: none; /* Esto elimanrá el maldito subrayado) */
+}
+
 /* Hover: efecto “tarjeta viva” */
 .artist-panel:hover {
   transform: translateY(-6px) scale(1.02);
