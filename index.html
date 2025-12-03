@@ -16,7 +16,6 @@
     <video class="video-background" autoplay muted loop id="bg-video" playsinline>
         <source src="lluvia.mp4" type="video/mp4">
     </video>
-    //example
 
  <header class="header">
     <!-- Banner promocional en la parte superior -->
@@ -39,12 +38,12 @@
         </div>
         
         <!-- Barra de búsqueda (Ubicado en la parte derecha)-->
-        <div class="search-container">
-    <input type="text" placeholder="Buscar..." class="search-input">
-    <button type="submit" class="search-button">
-        <span class="material-symbols-outlined">search</span> <!-- Ícono 'search' en estilo 'outlined' -->
-    </button>
-</div>
+        <form id="search-form" class="search-container" role="search">
+            <input id="search-input" type="search" placeholder="Buscar..." class="search-input" autocomplete="off">
+            <button id="search-button" type="submit" class="search-button">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </form>
     </div>
 </header>
 
