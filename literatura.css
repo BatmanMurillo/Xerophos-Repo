@@ -1,0 +1,100 @@
+.artist-section {
+    max-width: 1200px;
+    margin: 180px auto 80px;
+    padding: 0 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.artist-section-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de los paneles */
+.artist-panels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+/* Panel base */
+.artist-panel {
+    position: relative;
+    flex: 1 1 280px;         /* se adaptan al ancho disponible */
+    min-height: 220px;
+    max-width: 360px;
+
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* Capa oscura + texto */
+.artist-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.25)
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.artist-overlay h3 {
+    margin: 0 0 6px;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.artist-overlay p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.artist-overlay a {
+    color: var(--color--text-light, white);
+    text-decoration: none;
+}
+
+/* Hover: efecto “tarjeta viva” */
+.artist-panel:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    filter: brightness(1.05);
+}
+
+/* * --------------------------------------------------------------------------------------------------
+ * IMÁGENES DE FONDO ESPECÍFICAS PARA LOS ESCRITORES
+/* Escritora: Dana Abigail */
+.artist-panel[href="DAMS.html"] {
+    background-image: url("Images/DAMS_writer.jpg"); 
+}
+
+/* Escritor 2 */
+.artist-panel[href="escritor-dos.html"] {
+    background-image: url("Images/writer_two.jpg");
+}
+
+/* Escritor 3 */
+.artist-panel[href="escritor-tres.html"] {
+    background-image: url("Images/writer_three.jpg");
+}

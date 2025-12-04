@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desde las profundidades</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Literatura</title>
+    <link rel="stylesheet" href="literatura.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Video de fondo -->
+<header class="photo-header">
     <video class="video-background" autoplay muted loop id="bg-video">
-        <source src="lluvia.mp4" type="video/mp4">
+        <source src="Images/oscuridad.mp4" type="video/mp4">
     </video>
 
-<!--Seleccionar el destino-->
-<section id="literatura">
-    <h2>Música</h2>
+    <div class="mainHeaderBanner"> 
+        <div class="header-content">
+            <h1>Literatura</h1>
+            <h2>La literatura es el arte de la expresión verbal, que utiliza el lenguaje de forma creativa 
+                y estética para transmitir ideas, emociones e historias a través de obras escritas u orales.</h2>
+            <p>Alejandro Jodorowsky:<br>
+            "El arte de escribir consiste en contar algo que no se puede contar."</p>
+        </div>
+    </div>
+    
+</header>
+
+<section class="artist-section">
+    <a href="DAMS.html" class="artist-panel">
+        <img src="ruta/a/foto-escritor1.jpg" alt="Dana Abigaíl Martínez Salgado. ">
+        <div class="artist-overlay">
+            <h3 class="writer-name">Dana Abigaíl Martínez Salgado. </h3>
+        </div>
+    </a>
+
+    <a href="escritor-dos.html" class="artist-panel">
+        <img src="ruta/a/foto-escritor2.jpg" alt="Nombre del Escritor 2">
+        <div class="artist-overlay">
+            <h3 class="writer-name">Escritor Dos</h3>
+            <p>Poesía contemporánea.</p>
+        </div>
+    </a>
+    
+    <a href="escritor-tres.html" class="artist-panel">
+        <img src="ruta/a/foto-escritor3.jpg" alt="Nombre del Escritor 3">
+        <div class="artist-overlay">
+            <h3 class="writer-name">Escritor Tres</h3>
+            <p>Novela histórica.</p>
+        </div>
+    </a>
+
+    </section>
+    
 </section>
-
-    <script src="app.js"></script>
-
-
 </body>
 </html>
