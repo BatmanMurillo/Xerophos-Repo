@@ -1,3 +1,106 @@
+.content {
+    position: relative;
+    padding-top: 100px; /* El banner controlorá el relleno */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white; /* Asegura el texto blanco sobre fondo negro */
+    background-color: #000; /* Fondo */
+}
+
+.musica-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+/* Contenedor del encabezado */
+.photo-header {
+    position: relative;
+    width: 100%;
+    height: auto; /* El encabezado ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0;  /* El banner controlorá el relleno */
+    overflow: hidden;
+}
+
+/* Video de fondo */
+.video-background {
+    position: fixed; /* fijo, siempre detrás del contenido */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* para que no bloquee clicks */
+    top: 180px;
+}
+
+/* Contenido del encabezado */
+.header-content {
+    position: static;
+    text-align: center;
+    color: white;
+    z-index: 1; /* Asegura que el texto esté encima de las capas anteriores */
+    padding-top: 0; /* El banner controlorá el relleno */
+}
+
+/* Estilo para el título del encabezado */
+.header-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0; /* Elimina márgenes para asegurar que esté pegado al borde */
+}
+
+/* Estilo para el subtítulo o cita */
+.header-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #ddd;
+    margin-top: 10px; /* Añadir margen arriba para separar del título */
+}
+
+
+/* Conetenedor del encabezado principal con banner */
+.mainHeaderBanner {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0); /* Fondo sin transparencia, totalmente oscuro */
+    padding: 30px 0; /* Espaciado arriba y abajo */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    z-index: 5; /* Asegura que esté encima del video de fondo */ 
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Uso de Media Query para la responsiva de la página */
+
+@media (max-width: 640px) {
+    .fotografia-header {
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+}
+
+
+/* ===== Sección de artistas ===== */
 .artist-section {
     max-width: 1200px;
     margin: 180px auto 80px;
@@ -16,8 +119,8 @@
 .artist-panels {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
+    gap: 24px;
+    justify-content: center;
     align-items: flex-end;
     gap: 24px;
 }
@@ -25,7 +128,7 @@
 /* Panel base */
 .artist-panel {
     position: relative;
-    flex: 1 1 280px;         /* se adaptan al ancho disponible */
+    flex: 0 0 300px;         /* se adaptan al ancho disponible */
     min-height: 220px;
     max-width: 360px;
 
@@ -82,9 +185,12 @@
     filter: brightness(1.05);
 }
 
-/* * --------------------------------------------------------------------------------------------------
- * IMÁGENES DE FONDO ESPECÍFICAS PARA LOS ESCRITORES
-/* Escritora: Dana Abigail */
+/* * ----------------------------------------------------------------------
+ * IMÁGENES DE FONDO ESPECÍFICAS PARA LOS ESCRITORES (LITERATURA)
+ * ----------------------------------------------------------------------
+ */
+
+/* Escritora: Dana Abigail (DAMS) */
 .artist-panel[href="DAMS.html"] {
     background-image: url("Images/DAMS_writer.jpg"); 
 }
