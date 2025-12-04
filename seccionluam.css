@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* solo bloquea scroll horizontal */
+}
+
+.luam-banner-section {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.luam-banner {
+    height: 70vh; 
+    width: 100%;
+
+    /* Configuración de la imagen de fondo */
+    background-image: url('Musica/fotoluam.jpeg'); 
+    background-size: cover;      /* Asegura que la imagen cubra todo el banner */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+
+    /* Centrar el texto con Flexbox */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-end; /* Contenido hasta la parte inferior del banner */
+}
+
+.luam-banner-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.luam-banner-content h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondito */ 
+    color: black;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Lista con las canciones de Luam */
+.luam-music-list{
+    padding: 40px;
+    width: 100%;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding-left: 5%;
+}
+
+.track-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 25px;
+    white-space: nowrap;
+    color: #fff;
+}
