@@ -192,15 +192,15 @@ body {
 
 /* Escritora: Dana Abigail (DAMS) */
 .artist-panel[href="DAMS.html"] {
-    background-image: url("Images/DAMS_writer.jpg"); 
+    background-image: url("DAMSmultimedia/IMG-dan1.jpg"); 
 }
 
 /* Escritor 2 */
-.artist-panel[href="escritor-dos.html"] {
-    background-image: url("Images/writer_two.jpg");
-}
+.artist-panel[href="AARP.html"] { 
+     background-image: url("AARPmultimedia/IMG-a.jpg"); 
+       }
 
 /* Escritor 3 */
-.artist-panel[href="escritor-tres.html"] {
-    background-image: url("Images/writer_three.jpg");
+.artist-panel[href="SEM.html"] {
+background-image: url("SEMmultimedia/IMG_123.JPG");
 }
