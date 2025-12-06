@@ -18,6 +18,15 @@ menuButton.addEventListener("click", function() {
 const artists = [
     { name: 'Luam', url: 'https://batmanmurillo.github.io/Xerophos-Repo/Luam.html' },
     { name: 'Luma', url: 'https://batmanmurillo.github.io/Xerophos-Repo/Luma.html' },
+    { name: 'Dana', url: 'https://batmanmurillo.github.io/Xerophos-Repo/DAMS.html' },
+    {name: "Abigail", url: "https://batmanmurillo.github.io/Xerophos-Repo/DAMS.html"},
+    { name: 'Andrea', url: 'https://batmanmurillo.github.io/Xerophos-Repo/AMS.html' },
+    { name: 'Angelina', url: 'https://batmanmurillo.github.io/Xerophos-Repo/AARP.html' },
+    { name: 'Adi', url: 'https://batmanmurillo.github.io/Xerophos-Repo/AARP.html' },
+    {name: "Sebastian", url: "https://batmanmurillo.github.io/Xerophos-Repo/SEM.html"},
+    {name: "Murillo", url: "https://batmanmurillo.github.io/Xerophos-Repo/SEM.html"},
+    {name: "Emiliano", url: "https://batmanmurillo.github.io/Xerophos-Repo/EVG.html"},
+    {name: "Vargas", url: "https://batmanmurillo.github.io/Xerophos-Repo/EVG.html"},
     { name: 'Otro Artista', url: 'https://batmanmurillo.github.io/Xerophos-Repo/Otro.html' },
     { name: 'Otro artista', url: 'https://batmanmurillo.github.io/Xerophos-Repo/Otro.html' }
 ];
