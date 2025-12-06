@@ -1,0 +1,29 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: white;
+}
+
+
+.story-container {
+    box-sizing: border-box; 
+    
+    /* Ancho y centrado */
+    width: 90%; 
+    max-width: 900px;
+    margin: 40px auto 80px auto; /* 40px arriba, 80px abajo, y centrado (auto) */
+    
+    /* El PADDING crea el margen de seguridad interno de 20px en los lados */
+    padding: 20px; 
+    background: rgba(10, 10, 10, 0.9);
+    border-radius: 12px;
+}
+
+/* 3. Estilos de Párrafos: Para mejorar la lectura */
+.story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Aumenta el espacio entre líneas */
+    margin-bottom: 25px; /* Espacio entre párrafos */
+    text-align: center;
+}

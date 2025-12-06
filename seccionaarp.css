@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* solo bloquea scroll horizontal */
+}
+
+.adi-banner-section {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.adi-banner {
+    height: 70vh; 
+    width: 100%;
+
+    /* Configuración de la imagen de fondo */
+    background-image: url('AARPmultimedia/IMG-ap.jpg'); 
+    background-size: cover;      /* Asegura que la imagen cubra todo el banner */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+
+    /* Centrar el texto con Flexbox */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-end; /* Contenido hasta la parte inferior del banner */
+}
+
+.adi-banner-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.adi-banner-content h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondito */ 
+    color: white;
+}
+
+.aarp-content-container {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto 80px auto;
+    padding: 20px;
+    color: white;
+}
+
+.aarp-content-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Centrar el título dentro de este contenedor */
+.aarp-content-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}

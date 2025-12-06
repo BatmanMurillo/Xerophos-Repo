@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* solo bloquea scroll horizontal */
+    background-color: black;
+    color: white;
+}
+
+.sebastian-banner-section {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    margin-bottom: 120px;
+}
+
+.sebastian-banner {
+    height: 70vh; 
+    width: 100%;
+
+    /* Configuración de la imagen de fondo */
+    background-image: url('SEMmultimedia/IMG_12..jpg'); 
+    background-size: cover;      /* Asegura que la imagen cubra todo el banner */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+
+    /* Centrar el texto con Flexbox */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-end; /* Contenido hasta la parte inferior del banner */
+}
+
+.sebastian-banner-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.sebastian-banner-content h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+
+.link-to-story {
+    position: relative;
+    z-index: 100;
+}
+
+.story-container {
+    box-sizing: border-box; 
+    width: 90%; 
+    max-width: 900px;
+    margin: 20px auto 80px auto; 
+    padding: 20px; 
+}
+
+#story-link-main {
+    display: block; 
+    position: relative; 
+    z-index: 100;
+    width: 90%; 
+    max-width: 900px; 
+    margin: 60px auto 20px auto; 
+    text-align: left;
+    color: white; 
+    text-align: left;
+    font-size: 1.5em; 
+    padding-left: 0; 
+}
+
+.story-link-main a.story-link {
+    color: white !important; 
+    text-decoration: none; 
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Lista con los cuentos de Dana Abigail */
+.sebastian-stories-list{
+    margin-bottom: 80px;
+    padding: 40px;
+    width: 100%;
+}
