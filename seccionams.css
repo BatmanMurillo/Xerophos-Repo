@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* solo bloquea scroll horizontal */
+}
+
+.andrea-banner-section {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    margin-bottom: 160px;
+}
+
+.andrea-banner {
+    height: 70vh; 
+    width: 100%;
+
+    /* Configuración de la imagen de fondo */
+    background-image: url('AMSmultimedia/presentacion2.jpeg'); 
+    background-size: contain;      /* Asegura que la imagen cubra todo el banner */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+
+    /* Centrar el texto con Flexbox */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-end; /* Contenido hasta la parte inferior del banner */
+}
+
+.andrea-banner-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.andrea-banner-content h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondito */ 
+    color: white;
+}
+
+.ams-image-gallery {
+    /* Centrar la galería completa */
+    width: 95%; 
+    max-width: 1200px;
+    margin: 50px auto 100px auto; 
+    text-align: center; 
+    
+    /* Usaremos Flexbox para que las imágenes se organicen mejor */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes salten a la siguiente línea si no caben */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 25px; /* Espacio entre las imágenes */
+}
+
+.ams-image-gallery img {
+    /* Define el tamaño de cada imagen */
+    width: 100%; /* Por defecto ocupa todo el ancho del contenedor */
+    max-width: 350px; /* Máximo ancho que puede tener una sola imagen */
+    height: auto; 
+    
+    /* Estética */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    
+    /* Es importante para que Flexbox las maneje: */
+    display: block;
+}
+
+.ams-image-gallery figure {
+    margin: 0; /* Elimina márgenes predeterminados */
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 90px;
+}
