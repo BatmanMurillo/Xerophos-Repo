@@ -67,3 +67,52 @@ body {
     margin-bottom: 20px;
     font-size: 2em;
 }
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Media Queries para pantallas más pequeñas */
+@media screen and (max-width: 1024px) {
+    
+    /* --- Banner --- */
+    .adi-banner-content h1 {
+        font-size: 3em; /* Reducir el tamaño de la fuente */
+    }
+
+    /* --- Contenedor de Contenido --- */
+    .aarp-content-container {
+        width: 95%; /* Usar un poco más de ancho de pantalla */
+        padding: 15px; /* Reducir el padding interno */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* --- Banner --- */
+    .adi-banner {
+        height: 50vh; /* Reducir la altura del banner para dejar más espacio al contenido */
+    }
+    
+    .adi-banner-content {
+        padding: 10px 15px; /* Reducir el padding */
+    }
+    
+    .adi-banner-content h1 {
+        font-size: 2em; /* Reducir drásticamente la fuente del título */
+    }
+    
+    /* --- Contenedor de Contenido --- */
+    .aarp-content-container {
+        width: 95%; /* Asegurar que ocupe casi todo el ancho */
+        margin: 20px auto 40px auto; /* Reducir márgenes verticales */
+        padding: 10px; /* Reducir el padding interno */
+    }
+
+    .aarp-content-container h2 {
+        font-size: 1.5em; /* Reducir la fuente del subtítulo */
+        margin-bottom: 10px;
+    }
+    
+    .aarp-content-container p {
+        margin-bottom: 15px; /* Ajustar margen del párrafo */
+    }
+}

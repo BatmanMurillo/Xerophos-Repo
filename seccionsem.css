@@ -82,3 +82,75 @@ html, body {
     padding: 40px;
     width: 100%;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Media queries para responsividad */
+@media screen and (max-width: 1024px) {
+    
+    /* --- Banner --- */
+    .sebastian-banner-content h1 {
+        font-size: 3em; /* Reducir el tamaño de la fuente */
+    }
+    
+    /* --- Contenedor de la Historia --- */
+    .story-container {
+        width: 95%; /* Usar un poco más de ancho de pantalla */
+        margin: 20px auto 70px auto;
+        padding: 15px; 
+    }
+    
+    /* --- Enlace Principal (#story-link-main) --- */
+    #story-link-main {
+        width: 95%; 
+        font-size: 1.3em; /* Reducir el tamaño de la fuente del enlace */
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    /* --- Lista de Historias --- */
+    .sebastian-stories-list {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* --- Banner --- */
+    .sebastian-banner {
+        height: 50vh; /* Reducir la altura del banner */
+    }
+    
+    .sebastian-banner-content {
+        padding: 10px 15px; /* Reducir el padding */
+    }
+    
+    .sebastian-banner-content h1 {
+        font-size: 2em; /* Reducir la fuente del título */
+    }
+    
+    /* --- Sección General --- */
+    .sebastian-banner-section {
+        margin-bottom: 80px; /* Reducir el margen inferior del banner */
+    }
+
+    /* --- Contenedor de la Historia --- */
+    .story-container {
+        width: 95%; /* Maximizar el ancho del contenedor */
+        margin: 10px auto 40px auto; /* Ajustar márgenes verticales */
+        padding: 10px;
+    }
+    
+    /* --- Enlace Principal (#story-link-main) --- */
+    #story-link-main {
+        width: 95%;
+        font-size: 1.1em; /* Fuente más pequeña para móviles */
+        margin-top: 30px; 
+        margin-bottom: 10px;
+    }
+
+    /* --- Lista de Historias --- */
+    .sebastian-stories-list {
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}

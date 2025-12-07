@@ -70,3 +70,58 @@ body {
 }
 
 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Media queries para responsividad */
+@media screen and (max-width: 1024px) {
+    
+    /* --- Banner --- */
+    .luam-banner-content h1 {
+        font-size: 3em; /* Reducir el tamaño de la fuente */
+    }
+
+    /* --- Lista de Canciones --- */
+    .luam-music-list {
+        padding: 30px 20px; /* Reducir el padding horizontal */
+    }
+
+    .track-title {
+        font-size: 1.1rem; /* Ligeramente más pequeño */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* --- Banner --- */
+    .luam-banner {
+        height: 55vh; /* Reducir la altura del banner */
+    }
+    
+    .luam-banner-content {
+        padding: 10px 15px; /* Reducir el padding */
+    }
+    
+    .luam-banner-content h1 {
+        font-size: 2em; /* Reducir drásticamente la fuente del título */
+    }
+    
+    /* --- Lista de Canciones --- */
+    .luam-music-list {
+        padding: 20px 10px; /* Reducir el padding horizontal y vertical */
+    }
+    
+    .track-item {
+        /* Para que los elementos se apilen si no caben (por ejemplo, título largo + botón) */
+        flex-wrap: wrap; 
+        padding-left: 20px; /* Reducir el margen izquierdo para móviles */
+        margin: 15px 0; /* Ajustar margen vertical */
+    }
+
+    .track-title {
+        font-size: 1rem; 
+        /* Permitir que el texto ocupe todo el ancho para evitar que se corte */
+        white-space: normal; 
+        width: 100%; /* El título ocupa su propia línea si es necesario */
+        margin-right: 0;
+        margin-bottom: 5px; /* Separación si hay otros elementos debajo */
+    }
+}

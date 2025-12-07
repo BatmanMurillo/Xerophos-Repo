@@ -282,6 +282,10 @@ p {
     margin: 0; /* Asegura que el icono no tenga márgenes adicionales */
 }
 
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Media Queries para responsividad */
 /* Menú (en dispositivos pequeños) */
 @media (max-width: 640px) {
     .header-content {
@@ -291,14 +295,112 @@ p {
     .logo {
         justify-self: center;
     }
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+    .logo h1 {
+        font-size: 1.8rem;
+        line-height: 50px;
+    }
     .search-container {
         grid-column: 1/-1;
         justify-self: stretch;
     }
     .search-input {
         width: 100%;
+        margin-right: 0;
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    
+    /* --- Contenido Principal --- */
+    .content {
+        padding: 80px 30px 30px 30px; /* Reducir padding superior y horizontal */
+        font-size: 1.8em;
+    }
+
+    /* --- Paneles --- */
+    .panels {
+        gap: 15px; /* Reducir un poco el espacio entre paneles */
+        margin: 40px 0; /* Reducir márgenes verticales */
+    }
+
+    .panels div {
+        padding: 15px 30px; /* Reducir padding interno de los paneles */
+    }
+
+    /* --- Pie de Página --- */
+    .footer {
+        padding: 30px 15px; /* Reducir padding del footer */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    /* --- Banner Promocional --- */
+    .promo-banner {
+        font-size: 1rem; /* Reducir el tamaño de la fuente */
+        padding: 8px;
+    }
+    
+    /* --- Contenido Principal --- */
+    .content {
+        padding: 60px 20px 20px 20px;
+        font-size: 1.5em; /* Fuente más pequeña para móviles */
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    /* --- Paneles (¡CLAVE!) --- */
+    .panels {
+        flex-direction: column; /* Apilar los paneles verticalmente */
+        align-items: center; /* Centrar los paneles apilados */
+        gap: 15px; /* Espacio entre los paneles apilados */
+        margin: 30px 0;
+    }
+
+    .panels div {
+        width: 80%; /* Darle un ancho decente al panel en móviles */
+        padding: 15px;
+    }
+
+    /* --- Pie de Página --- */
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-links {
+        flex-direction: column; /* Apilar los enlaces de menú del footer */
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer-social {
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
 
 /* Contenido principal (opcional para agregar espacio a la izquierda cuando el menú se despliega) */
 body.menu-active {

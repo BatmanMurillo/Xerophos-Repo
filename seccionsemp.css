@@ -27,3 +27,34 @@ html, body {
     margin-bottom: 25px; /* Espacio entre párrafos */
     text-align: center;
 }
+
+/* -----------------------------------------------------------------------------------------------------------------------*/
+/* Media Queries para responsividad */
+
+@media screen and (max-width: 1024px) {
+    
+    /* --- Contenedor de la Historia --- */
+    .story-container {
+        width: 95%; /* Usar más ancho de pantalla */
+        margin: 30px auto 70px auto; /* Ligeros ajustes en márgenes */
+        padding: 15px; /* Reducir ligeramente el padding interno */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* --- Contenedor de la Historia --- */
+    .story-container {
+        width: 95%; /* Maximizar el ancho para aprovechar el espacio */
+        margin: 20px auto 40px auto; /* Reducir considerablemente los márgenes verticales */
+        padding: 10px; /* Reducción de padding para dar más espacio al contenido */
+        border-radius: 8px; /* Ligeramente más pequeño el borde */
+    }
+
+    /* --- Párrafos --- */
+    .story-content p {
+        font-size: 1rem; /* Reducir la fuente para mejor visualización en móvil */
+        line-height: 1.6; /* Reducir ligeramente el espacio entre líneas */
+        margin-bottom: 20px; /* Ajustar el espacio entre párrafos */
+    }
+}

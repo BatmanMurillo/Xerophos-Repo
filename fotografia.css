@@ -100,6 +100,92 @@ body {
 }
 
 
+@media screen and (max-width: 1024px) {
+    
+    /* --- Encabezado Principal --- */
+    .musica-header {
+        font-size: 2rem; /* Reducir la fuente del encabezado fijo */
+    }
+    
+    .header-content h1 {
+        font-size: 2.8rem; /* Reducir el título principal */
+    }
+
+    .header-content p {
+        font-size: 1.3rem; /* Reducir el subtítulo */
+    }
+
+    /* --- Sección de Artistas --- */
+    .artist-section {
+        margin-top: 120px; /* Reducir el margen superior */
+        padding: 0 15px;
+    }
+
+    .artist-section-title {
+        font-size: 1.8rem;
+    }
+
+    /* --- Paneles (CLAVE: 2 por fila) --- */
+    .artist-panel {
+        /* Permite que solo quepan dos en la fila, usando un porcentaje */
+        flex: 1 1 calc(50% - 30px); /* 50% menos la mitad del gap (24px) */
+        min-height: 250px; /* Asegurar un buen tamaño vertical */
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* --- Encabezado Principal --- */
+    .musica-header {
+        font-size: 1.5rem; /* Fuente más pequeña */
+        padding: 15px;
+    }
+
+    .header-content h1 {
+        font-size: 2.2rem; /* Título principal más pequeño */
+    }
+    
+    .header-content p {
+        font-size: 1.1rem; /* Subtítulo más pequeño */
+    }
+    
+    /* --- Video de Fondo --- */
+    .video-background {
+        top: 150px; /* Ajustar la posición si el encabezado principal se encoge */
+    }
+
+    /* --- Sección de Artistas --- */
+    .artist-section {
+        margin: 80px auto 40px;
+        padding: 0 10px;
+    }
+
+    .artist-section-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    /* --- Paneles (CLAVE: 1 por fila) --- */
+    .artist-panels {
+        gap: 15px;
+    }
+    
+    .artist-panel {
+        /* Fuerza un solo panel por fila (90% del ancho del contenedor) */
+        flex: 1 1 90%; 
+        min-height: 200px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        max-width: none; /* Elimina el límite máximo */
+    }
+
+    .artist-overlay h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
 /* ===== Sección de artistas ===== */
 .artist-section {
     max-width: 1200px;

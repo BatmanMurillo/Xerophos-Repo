@@ -80,3 +80,54 @@ body {
     max-width: 350px;
     margin-bottom: 90px;
 }
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* Media Queries para Responsividad */
+@media screen and (max-width: 1024px) {
+    
+    /* --- Banner --- */
+    .andrea-banner-content h1 {
+        font-size: 3em; /* Reducir el tamaño de la fuente */
+    }
+
+    /* --- Galería --- */
+    /* Mantenemos dos columnas, pero reducimos el max-width si es necesario */
+    .ams-image-gallery figure {
+        max-width: 45%; /* Asegura que la figura no crezca demasiado */
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* --- Banner --- */
+    .andrea-banner {
+        height: 60vh; /* Reducir un poco la altura del banner */
+    }
+    
+    .andrea-banner-content {
+        padding: 10px 15px; /* Reducir el padding */
+    }
+    
+    .andrea-banner-content h1 {
+        font-size: 2em; /* Reducir drásticamente la fuente del título */
+    }
+    
+    /* --- Galería --- */
+    .ams-image-gallery {
+        margin: 30px auto 60px auto; /* Reducir márgenes verticales */
+        gap: 15px; /* Reducir el espacio entre las imágenes */
+    }
+    
+    .ams-image-gallery figure {
+        /* CLAVE: Forzamos una sola columna (100% del contenedor - margen) */
+        width: 90%; 
+        max-width: none; /* Quitamos el límite máximo para que use el 90% */
+        margin-bottom: 30px; 
+    }
+    
+    .ams-image-gallery img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Reducir la sombra */
+    }
+}
