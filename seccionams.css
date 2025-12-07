@@ -56,8 +56,8 @@ body {
     
     /* Usaremos Flexbox para que las imágenes se organicen mejor */
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    flex-wrap: wrap; /* Permite que las imágenes salten a la siguiente línea si no caben */
+    justify-content: center; /* Centra las imágenes horizontalmente */
     gap: 25px; /* Espacio entre las imágenes */
 }
 

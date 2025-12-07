@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* solo bloquea scroll horizontal */
+}
+
+.emiliano-banner-section {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    margin-bottom: 160px;
+}
+
+.emiliano-banner {
+    height: 80vh; 
+    width: 100%;
+
+    /* Configuración de la imagen de fondo */
+    background-image: url('EVGmultimedia/IMG-f5.jpg'); 
+    background-size: contain;      /* Asegura que la imagen cubra todo el banner */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+
+    /* Centrar el texto con Flexbox */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: flex-end; /* Contenido hasta la parte inferior del banner */
+}
+
+.emiliano-banner-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.emiliano-banner-content h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondito */ 
+    color: white;
+}
+
+.evg-image-gallery {
+    /* Centrar la galería completa */
+    width: 95%; 
+    max-width: 1200px;
+    margin: 50px auto 100px auto; 
+    text-align: center; 
+    
+    /* Usaremos Flexbox para que las imágenes se organicen mejor */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes salten a la siguiente línea si no caben */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 25px; /* Espacio entre las imágenes */
+}
+
+.evg-image-gallery img {
+    width: 100%;
+    max-width: 350px; 
+    height: auto; 
+    
+    /* Estética */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    
+    /* Es importante para que Flexbox las maneje: */
+    display: block;
+}
+
+.evg-image-gallery figure {
+    margin: 0; /* Elimina márgenes predeterminados */
+    width: 48%;
+    max-width: 350px;
+    margin-bottom: 90px;
+}
