@@ -56,20 +56,19 @@ body {
     
     /* Usaremos Flexbox para que las imágenes se organicen mejor */
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes salten a la siguiente línea si no caben */
-    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: center; 
     gap: 25px; /* Espacio entre las imágenes */
 }
 
 .ams-image-gallery img {
-    /* Define el tamaño de cada imagen */
-    width: 100%; /* Por defecto ocupa todo el ancho del contenedor */
-    max-width: 350px; /* Máximo ancho que puede tener una sola imagen */
+    width: 100%;
+    max-width: 350px; 
     height: auto; 
     
     /* Estética */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     
     /* Es importante para que Flexbox las maneje: */
     display: block;
